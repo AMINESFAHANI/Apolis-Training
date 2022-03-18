@@ -1,0 +1,42 @@
+
+//  Single Inheritance
+
+package com.apolis.main;
+
+
+	 
+	class School{
+	    String type;
+	    public void setType(String type) {
+	        this.type= type;
+	    }
+	}
+
+	public class StudentA extends School{
+	    
+	    private String name;
+	    private int grade; 
+	    
+	    public void changeData(String name,int score)
+	    {
+	        this.name=name;
+	        this.grade=score;
+	    }
+	    
+	    public void displayData() {
+	        System.out.println("School type is : "+super.type);
+	        System.out.println("School type is : "+this.type);
+	        System.out.println("Student name is : "+name);
+	        System.out.println("Grade is : "+ grade);
+	    }
+	    
+	    public static void main(String[] args) {
+	        StudentA student = new StudentA();
+	        student.changeData("Evan",55);
+	        student.setType("High School");
+	        student.displayData();
+	    }
+	}
+
+
+
