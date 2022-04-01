@@ -13,9 +13,9 @@ class Parent1{
 }
 
 class Child1 extends Parent1{
-//       static void method() {
-//           System.out.println("Child Class method()");
-//       }
+       static void method() {
+           System.out.println("Child Class method()");
+       }
 }
 
 public class MethodHiding{
